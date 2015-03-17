@@ -1,0 +1,16 @@
+name:              HaskellMower
+version:           1.0
+Build-Type:        Simple
+cabal-version:     >= 1.9.2
+
+executable HaskellMower
+  main-is:         Main.hs
+  hs-source-dirs:  src/test, src/main/, src/main/model/
+  build-depends:   base, parsec
+
+
+Test-Suite tests
+  type:               exitcode-stdio-1.0
+  main-is:            Tests.hs
+  hs-source-dirs:     src/test/, src/main/, src/main/model/
+  build-depends:      HUnit,base,parsec
