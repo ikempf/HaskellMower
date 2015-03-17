@@ -6,7 +6,6 @@ module MowerTest where
     import Mower
     import Instruction
     
-    
     sould_advance =
         let Mower i j orientation = executeInstructions mower instructions in
         TestCase $ assertEqual "should_advance" (2, 4, North) (i, j, orientation)
